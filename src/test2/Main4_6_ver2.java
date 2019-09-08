@@ -51,7 +51,6 @@ public class Main4_6_ver2 {
         for (char znak : tabelaZnakow) {
             System.out.print(znak + " ");
         }
-
         System.out.println("");
         liniaOddzielajaca();
 
@@ -76,8 +75,6 @@ public class Main4_6_ver2 {
         for (int i = 0; i < tabelaZnakowAscii.length; i++) {
 
             int znakAscii2 = tabelaZnakowAscii[i];
-//            System.out.println(tabelaZnakowAscii[i] + przesuniecie);
-//            System.out.println(znakAscii2);
 
             tabelaZnakowAsciiZPrzesunieciem[i] = znakAscii2 + przesuniecie;
             char znakZaszyfrowany = (char) tabelaZnakowAsciiZPrzesunieciem [i];
@@ -86,13 +83,10 @@ public class Main4_6_ver2 {
             System.out.print(tabelaZnakowAsciiZPrzesunieciem[i] + " = " + tabelaZnakowPoSzyfrowaniu[i] + " , ");
         }
         System.out.println(" ");
-            liniaOddzielajaca();
-
+//            liniaOddzielajaca();
         System.out.print("Oryginał: ");
         System.out.println(tabelaZnakow);
         System.out.print("Po szyfrowaniu: ");
         System.out.println(tabelaZnakowPoSzyfrowaniu);
-
     }
-
 }
