@@ -12,11 +12,6 @@
 //          Do tego gdy wpiszemu bardzo dużą wartość przesunięcia to może nie znaleźć znaków, tak samo jak wpiszemy duzą
 //             wartość ujemną (chociaż przy -1000 znalazlo mi arabske znaczki :).
 
-//         Dodatkowy komentarz.
-
-
-
-
 
 package test2;
 
