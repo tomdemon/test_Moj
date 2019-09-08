@@ -5,6 +5,7 @@ public class Main {
 
         // to nie powinno byc tak
         System.out.println("To powinno byc nie lub nie");
+        System.out.println("To powinno byc tak, albo tak");
         int[] tabela1D = new int[13];
 
         // komentarz
