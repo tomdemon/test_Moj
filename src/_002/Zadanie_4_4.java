@@ -6,11 +6,11 @@
 
 
 
-package test2;
+package _002;
 import java.util.Scanner;
 
 
-public class Test4_3 {
+public class Zadanie_4_4 {
 
     public static void liniaOddzielajaca () {
         System.out.println("---------------------------------");

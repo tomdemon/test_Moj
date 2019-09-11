@@ -13,11 +13,11 @@
 //             wartość ujemną (chociaż przy -1000 znalazlo mi arabske znaczki :).
 
 
-package test2;
+package _002;
 
 import java.util.Scanner;
 
-public class Main4_6_ver2 {
+public class Zadanie_4_6_ver2 {
 
     public static void liniaOddzielajaca () {
         System.out.println("---------------------------------");

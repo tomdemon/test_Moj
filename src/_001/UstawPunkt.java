@@ -1,3 +1,5 @@
+package _001;
+
 public class UstawPunkt {
 
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package _001;
+
 public class Person {
 
     static int ileLudzi;

@@ -1,6 +1,6 @@
-package test2;
+package _002;
 
-public class Main3 {
+public class Test01 {
 
     public static void liniaOddzielająca () {
 

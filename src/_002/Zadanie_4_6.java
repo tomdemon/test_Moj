@@ -6,11 +6,11 @@
 //        przyjac, ze łanuch wejsciowy składa sie tylko z małych liter alfabetu angielskiego,
 //        tj. ’a’ – ’z’ (26 znaków) oraz spacja
 
-package test2;
+package _002;
 
 import java.util.Scanner;
 
-public class Main4_6 {
+public class Zadanie_4_6 {
 
 
     public static void liniaOddzielajaca () {

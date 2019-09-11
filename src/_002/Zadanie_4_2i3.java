@@ -7,10 +7,10 @@
 
 
 
-package test2;
+package _002;
 import java.util.Scanner;
 
-public class Main4_2 {
+public class Zadanie_4_2i3 {
 
     public static void liniaOddzielajaca () {
 

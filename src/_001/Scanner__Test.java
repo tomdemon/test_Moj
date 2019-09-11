@@ -1,3 +1,5 @@
+package _001;
+
 public class Scanner__Test {
     public static void main(String[] args) {
 

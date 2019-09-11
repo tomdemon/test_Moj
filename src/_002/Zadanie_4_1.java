@@ -1,8 +1,8 @@
-package test2;
+package _002;
 import java.util.Scanner;
 
 
-public class Main4 {
+public class Zadanie_4_1 {
 
     public static void liniaOddzielajaca () {
 
