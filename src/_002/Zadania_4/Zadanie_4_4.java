@@ -6,7 +6,7 @@
 
 
 
-package _002;
+package _002.Zadania_4;
 import java.util.Scanner;
 
 

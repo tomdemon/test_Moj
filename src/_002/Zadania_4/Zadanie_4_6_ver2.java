@@ -13,7 +13,7 @@
 //             wartość ujemną (chociaż przy -1000 znalazlo mi arabske znaczki :).
 
 
-package _002;
+package _002.Zadania_4;
 
 import java.util.Scanner;
 

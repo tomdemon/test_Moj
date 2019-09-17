@@ -6,7 +6,7 @@
 //        przyjac, ze łanuch wejsciowy składa sie tylko z małych liter alfabetu angielskiego,
 //        tj. ’a’ – ’z’ (26 znaków) oraz spacja
 
-package _002;
+package _002.Zadania_4;
 
 import java.util.Scanner;
 

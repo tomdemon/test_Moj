@@ -2,7 +2,7 @@
 //        Funkcja powinnabyć napisana w dwóch wersjach: iteracyjnej i rekurencyjnej.
 
 
-package _002;
+package _002.Zadania_5;
 
 import java.util.Scanner;
 
