@@ -19,6 +19,15 @@ public class InputUtils {
         return scanner.next().charAt(0);
     }
 
+    public static long pobierzLiczbe(String message) {
+        System.out.println (message);
+        return scanner.nextInt();
+    }
+
+    public static long pobierzLiczbe() {
+        return pobierzLiczbe("Proszę podaj liczbę większą od 0 : ");
+    }
+
     public static char pobierzLitere() {
         return pobierzLitere("Proszę podaj jakąś literę : ");
     }

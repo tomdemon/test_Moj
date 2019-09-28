@@ -4,34 +4,22 @@
 
 package _002.Zadania_5;
 
-import java.util.Scanner;
+import utils.InputUtils;
 
 public class Zadanie_5_1 {
 
-
-    public static long pobierzLiczbe() {
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println ("Proszę podaj liczbę większą od 0 : ");
-        long pobierzLiczbe;
-        pobierzLiczbe = scanner.nextInt();
-        return pobierzLiczbe;
-    }
-
-
-    public long silniaIteracyjna (long n){
+    public long silniaIteracyjna(long n) {
         long silnia = 1L;
-        while (n>0){
+        while (n > 0) {
             silnia = silnia * n;
             n--;
         }
         return silnia;
     }
 
-    public long silniaRekurencyjna (long n){
-        if (n>0){
-            return n * silniaRekurencyjna(n-1);
+    public long silniaRekurencyjna(long n) {
+        if (n > 0) {
+            return n * silniaRekurencyjna(n - 1);
         } else {
             return 1;
         }
@@ -41,7 +29,7 @@ public class Zadanie_5_1 {
         Zadanie_5_1 r = new Zadanie_5_1();
         long iteracja, rekurencja = 0L;
 
-        long liczba = pobierzLiczbe();
+        long liczba = InputUtils.pobierzLiczbe();
 //        System.out.println("Liczba wynosi " + liczba);
         iteracja = r.silniaIteracyjna(liczba);
         rekurencja = r.silniaRekurencyjna(liczba);
