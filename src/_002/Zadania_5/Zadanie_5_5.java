@@ -10,22 +10,23 @@
 
 package _002.Zadania_5;
 
+import utils.InputUtils;
+
 import java.util.Scanner;
 
 public class Zadanie_5_5 {
 
 
-    public static void liniaOddzielajaca() {
-        System.out.println("---------------------------------");
-    }
-
     static boolean startWith (String str1, String str2){
 
-        if (str1.equals(str2)){
-            System.out.println(true);
-            return true;
+        if (str2.length() >= str1.length()) {
+
+            String ciagZnakowPrefiks = str2.substring(0, str1.length());
+//        System.out.println(str1 + " = " + ciagZnakowPrefiks);
+            return str1.equals(ciagZnakowPrefiks);
+
         } else {
-            System.out.println(false);
+            System.out.println("Blad. Lancuch znakow jest krotszy od prefiksu.");
             return false;
         }
     }
@@ -35,27 +36,14 @@ public class Zadanie_5_5 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Prosze podac lancuch znakow : ");
+        String ciagZnakow = InputUtils.pobierzTekst("Prosze podac lancuch znakow : ");
+//        Pozostawilem by roznica w WIELKOSC liter byla bledem
 
-        String ciagZnakow = scanner.nextLine();
+        String prefiks = InputUtils.pobierzTekst("Prosze podac prefiks : ");
 
-        System.out.println("Prosze podac prefiks : ");
+        InputUtils.liniaOddzielajaca();
 
-        String prefiks = scanner.nextLine();
-
-        liniaOddzielajaca();
-
-        int iloscZnakowWPrefiksie = prefiks.length();
-
-        if (ciagZnakow.length() > prefiks.length()) {
-
-            String ciagZnakowPrefiks = ciagZnakow.substring(0, iloscZnakowWPrefiksie);
-//        System.out.println(prefiks + " = " + ciagZnakowPrefiks);
-
-            startWith(prefiks, ciagZnakowPrefiks);
-        } else {
-            System.out.println("Blad. Lancuch znakow jest krotszy od prefiksu.");
-        }
+        System.out.println("Wynik: " + startWith(prefiks, ciagZnakow));
 
     }
 }
