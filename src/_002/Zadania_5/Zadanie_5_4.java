@@ -4,35 +4,29 @@
 
 package _002.Zadania_5;
 
+import utils.InputUtils;
+
+import javax.print.DocFlavor;
+import javax.swing.*;
 import java.util.Scanner;
+
+import static java.lang.String.valueOf;
 
 public class Zadanie_5_4 {
 
-    public static void liniaOddzielajaca () {
-        System.out.println("---------------------------------");
-    }
 
-
-    public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Proszę podać łańcuch znaków : ");
-
-        String ciagZnakow = scanner.nextLine();
-
-        liniaOddzielajaca();
+    public static String flipCase(String text) {
 
 //        System.out.println("Znaki wrzucono w tabelę: ");
 
 //        String ciagZnakowMaleLitery = ciagZnakow.toLowerCase();
 
-        char[] tabelaZnakow = ciagZnakow.toCharArray();
+        char[] tabelaZnakow = text.toCharArray();
         for (char znak : tabelaZnakow) {
 //            System.out.print(znak + " ");
         }
 //        System.out.println("");
-        liniaOddzielajaca();
+//        InputUtils.liniaOddzielajaca();
 
 //        System.out.println("Zamiana na znaki ASCII");
 
@@ -42,27 +36,23 @@ public class Zadanie_5_4 {
         for (int i = 0; i < tabelaZnakow.length; i++) {
             znakAscii = (int) tabelaZnakow[i];
             tabelaZnakowAscii[i] = znakAscii;
-            System.out.print(tabelaZnakow[i] + " = " + tabelaZnakowAscii[i] + " , ");
+//            System.out.print(tabelaZnakow[i] + " = " + tabelaZnakowAscii[i] + " , ");
         }
-        System.out.println(" ");
-//        liniaOddzielajaca();
+//        System.out.println();
+//        InputUtils.liniaOddzielajaca();
 
-        int[] tabelaZnakowAsciiZPrzesunieciem = new int [tabelaZnakow.length];
+        int[] tabelaZnakowAsciiZPrzesunieciem = new int[tabelaZnakow.length];
 
         for (int i = 0; i < tabelaZnakowAscii.length; i++) {
 
-            if (tabelaZnakowAscii[i] == 32) {
-                tabelaZnakowAsciiZPrzesunieciem[i] = tabelaZnakowAscii[i];
-//                System.out.println("dla 32 =  " + tabelaZnakowAsciiZPrzesunieciem[i]);
-
-            } else if (tabelaZnakowAscii[i] <= 96) {
+            if ((tabelaZnakowAscii[i] >= 65) && (tabelaZnakowAscii[i] <= 90) ) {
                 tabelaZnakowAsciiZPrzesunieciem[i] = tabelaZnakowAscii[i] + 32;
-//                System.out.println("dla < 96 = "+ tabelaZnakowAsciiZPrzesunieciem[i]);
+
+            } else if ((tabelaZnakowAscii[i] >= 97) && (tabelaZnakowAscii[i]) <= 122 ) {
+                tabelaZnakowAsciiZPrzesunieciem[i] = tabelaZnakowAscii[i] - 32;
 
             } else {
-                tabelaZnakowAsciiZPrzesunieciem[i] = tabelaZnakowAscii[i] - 32;
-//                System.out.println("dla > 96 = " + tabelaZnakowAsciiZPrzesunieciem[i]);
-
+                tabelaZnakowAsciiZPrzesunieciem[i] = tabelaZnakowAscii[i];
             }
         }
 
@@ -74,15 +64,21 @@ public class Zadanie_5_4 {
             tabelaZnakowPoSzyfrowaniu[i] = znak;
 
 //            System.out.print(tabelaZnakowAsciiZPrzesunieciem[i] + " = " + tabelaZnakowPoSzyfrowaniu[i] + " , ");
-            System.out.print(tabelaZnakowPoSzyfrowaniu[i] + " = " + tabelaZnakowAsciiZPrzesunieciem[i] + " , ");
+//            System.out.print(tabelaZnakowPoSzyfrowaniu[i] + " = " + tabelaZnakowAsciiZPrzesunieciem[i] + " , ");
         }
-        System.out.println(" ");
-            liniaOddzielajaca();
-        System.out.print("Oryginał: ");
-        System.out.println(tabelaZnakow);
-        System.out.print("Po zmianie: ");
-        System.out.println(tabelaZnakowPoSzyfrowaniu);
+//        System.out.println(" ");
 
+        String ciagZnakowPoSzyfrowaniu = "";
+        for (int i = 0; i < tabelaZnakowPoSzyfrowaniu.length; i++) {
+            ciagZnakowPoSzyfrowaniu += tabelaZnakowPoSzyfrowaniu[i];
+        }
+            return ciagZnakowPoSzyfrowaniu;
     }
 
+    public static void main(String[] args) {
+
+        String ciagZnakow = InputUtils.pobierzTekst();
+        System.out.println("Oryginał: " + ciagZnakow);
+        System.out.println("Po zmianie: " + flipCase(ciagZnakow));
+    }
 }
