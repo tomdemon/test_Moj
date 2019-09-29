@@ -17,19 +17,16 @@ public class Zadanie_5_3 {
 //            System.out.print(znak + " ");
         }
 //        System.out.println("");
-        InputUtils.liniaOddzielajaca();
-        int brakZnaku = 0;
+//        InputUtils.liniaOddzielajaca();
+
         for (int i = 0; i < tabelaZnakow.length; i++) {
 
             if (tabelaZnakow[i] == z) {
-                System.out.println("Miejsce litery '" + z + "' jest nr " + i);
-                brakZnaku++;
+//                System.out.println("Miejsce litery '" + z + "' jest nr " + i);
+                return i;
             }
         }
-        if (brakZnaku == 0) {
-            System.out.println("Miejsce litery '" + z + "' jest nr -1");
-        }
-        return z;
+        return -1;
     }
 
     public static void main(String[] args) {
@@ -45,7 +42,7 @@ public class Zadanie_5_3 {
 
 //        liniaOddzielajaca();
 
-        strpos(pobranyTekst, pobranaLitera);
+        System.out.println(strpos(pobranyTekst, pobranaLitera));
 
     }
 }
