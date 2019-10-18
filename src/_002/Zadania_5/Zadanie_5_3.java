@@ -10,7 +10,7 @@ import utils.InputUtils;
 
 public class Zadanie_5_3 {
 
-    public static int strpos(String text, char z) {
+    public int strpos(String text, char z) {
 //        System.out.println("Znaki wrzucono w tabelę: ");
         char[] tabelaZnakow = text.toCharArray();
         for (char znak : tabelaZnakow) {
@@ -42,7 +42,9 @@ public class Zadanie_5_3 {
 
 //        liniaOddzielajaca();
 
-        System.out.println(strpos(pobranyTekst, pobranaLitera));
+        Zadanie_5_3 obiekt = new Zadanie_5_3();
+
+        System.out.println(obiekt.strpos(pobranyTekst, pobranaLitera));
 
     }
 }
