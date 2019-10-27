@@ -46,6 +46,14 @@ public class InputUtils {
         return pobierzLiczbe("Proszę podaj liczbę większą od 0: ");
     }
 
+    public static int pobierzLiczbeInt(String message) {
+        System.out.println (message);
+        return scanner.nextInt();
+    }
+
+    public static int pobierzLiczbeInt() {
+        return pobierzLiczbeInt ("Proszę podaj liczbę większą od 0: ");
+    }
 
 
 }
