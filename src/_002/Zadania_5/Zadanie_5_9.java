@@ -18,35 +18,18 @@ public class Zadanie_5_9 {
 
     public static String[] podzielNaSlowa(String text) {
 
-
-//        (SPLIT) Niestety przy kilku spacjach daje nie prawidlowe wyniki
-
-//        String[] result = text.split("\\s");
-//        for (int x=0; x<result.length; x++)
-//            System.out.println("a: " + result[x]);
-//        return result;
-//    }
-
         List<String> tokeny = new ArrayList<>();
 
-        StringTokenizer tabelaZeSlowami = new StringTokenizer(text, " ");
+        StringTokenizer tabelaZeSlowami = new StringTokenizer(text);
 
         while (tabelaZeSlowami.hasMoreTokens()) {
             tokeny.add(tabelaZeSlowami.nextToken());
         }
 
-//        Niestety tylko tak umialem wyciagnac wyrazy bez bledow uzywajac wpier Tokenizacji a potem wyciagajac
-//        slowa przez Array a na koncu byla Tablica
-
         String[] tablicaSlow = new String[tokeny.size()];
 
-        for (int i = 0; i < tokeny.size(); i++) {
-            tablicaSlow[i] = tokeny.get(i);
-//            System.out.println("b: " + tablicaSlow[i]);
-        }
-
-
-        return tablicaSlow;
+        // lista ma metode gdzie przekazujesz tablice o danym rozmiarze i ona sama ja wypenia
+        return tokeny.toArray(tablicaSlow);
     }
 
 

@@ -6,18 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Zadanie_5_9Test {
 
-    Zadanie_5_9 obiekt;
-
     @Test
     void podzielNaSlowa() {
 
 //        dobra wartosc do sprawdzenia
-        assertEquals("Ala", obiekt.podzielNaSlowa("Ala ma kota"));
-//        assertEquals(3, obiekt.podzielNaSlowa("     Ala    ma    kota      "));
-
-        //        zle wartosci do sprawdzenia
-//        assertEquals(0, obiekt.podzielNaSlowa("Ala ma kota"));
-
+        assertArrayEquals(new String[]{"Ala", "ma","kota"}, Zadanie_5_9.podzielNaSlowa("Ala ma kota"));
+        assertArrayEquals(new String[]{"Ala", "ma","kota"}, Zadanie_5_9.podzielNaSlowa("     Ala    ma    kota      "));
+        assertArrayEquals(new String[]{"Loerm", "1", "2", "3", "HELLO", "WORL", "D", "!!!"}, Zadanie_5_9.podzielNaSlowa("     Loerm 1 2 3 \n HELLO WORL D !!!    "));
     }
 
 }
