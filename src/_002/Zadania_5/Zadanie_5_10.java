@@ -7,19 +7,19 @@ public class Zadanie_5_10 {
     public static int strFindAndCount(String gdzie, String co) {
         int ileRazy = 0;
 
-            for (int i = 0; i < gdzie.length(); i++) {
-                int indeks = gdzie.indexOf(co, i);
+        for (int i = 0; i < gdzie.length(); i++) {
+            int indeks = gdzie.indexOf(co, i);
 //                System.out.println( i + "- indeks: " + indeks);
-                if (indeks < 0) {
-                    return ileRazy;
-                }
-//                System.out.println("1 - " + i);
-                i = indeks + co.length() - 1;
-//                System.out.println("2 - " + i);
-                ileRazy++;
-//                System.out.println("Ile razy: " + ileRazy);
+            if (indeks < 0) {
+                return ileRazy;
             }
-            return ileRazy;
+//                System.out.println("1 - " + i);
+            i = indeks + co.length() - 1;
+//                System.out.println("2 - " + i);
+            ileRazy++;
+//                System.out.println("Ile razy: " + ileRazy);
+        }
+        return ileRazy;
     }
 
     public static void main(String[] args) {
