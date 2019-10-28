@@ -13,6 +13,8 @@ class Zadanie_5_10Test {
         assertEquals(7, Zadanie_5_10.strFindAndCount(" ma ma mama mam a mama m a ", "ma"));
         assertEquals(3, Zadanie_5_10.strFindAndCount(" ma ma mama mam a mama m a ", "mam"));
         assertEquals(0, Zadanie_5_10.strFindAndCount(" ma ma mama mam a mama m a ", "ba"));
+        assertEquals(1, Zadanie_5_10.strFindAndCount("hello world", "hello world"));
+        assertEquals(1, Zadanie_5_10.strFindAndCount("hello world", "world"));
 
         //        zle wartosci do sprawdzenia
 //        assertEquals(6, obiekt.strFindAndCount(" ma ma mama mam a mama m a ", "ma"));
