@@ -3,23 +3,22 @@ package _002.Zadania_5;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 class Zadanie_5_7Test {
-
-    Zadanie_5_7 obiekt;
 
     @Test
     void strfind() {
 
 //        dobra wartosc do sprawdzenia
-        assertEquals(4, obiekt.strfind("Ala ma kota", "ma"));
-        assertEquals(0, obiekt.strfind("Ala ma kota", "Ala ma kota"));
-        assertEquals(0, obiekt.strfind("Ala ma kota", ""));
-        assertEquals(-1, obiekt.strfind("Pies", "jakis pies"));
-        assertEquals(-1, obiekt.strfind("Ala ma kota", "pies"));
+        assertEquals(4, Zadanie_5_7.strfind("Ala ma kota", "ma"));
+        assertEquals(0, Zadanie_5_7.strfind("Ala ma kota", "Ala ma kota"));
+        assertEquals(0, Zadanie_5_7.strfind("Ala ma kota", ""));
+        assertEquals(-1, Zadanie_5_7.strfind("Pies", "jakis pies"));
+        assertEquals(-1, Zadanie_5_7.strfind("Ala ma kota", "pies"));
 
 //        zle wartosci do sprawdzenia
-//        assertEquals(0, obiekt.strfind("Ala ma kota", "pies"));
+        assertNotEquals(0, Zadanie_5_7.strfind("Ala ma kota", "pies"));
     }
 
 }

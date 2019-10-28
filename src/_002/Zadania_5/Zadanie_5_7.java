@@ -19,11 +19,9 @@ public class Zadanie_5_7 {
 
     public static int strfind(String gdzie, String co) {
 
-//        System.out.println(gdzie + " + " + co);
         boolean czyJest = gdzie.contains(co);
-        if (czyJest == true) {
-            int pozycja = gdzie.indexOf(co);
-            return pozycja;
+        if (czyJest) {
+            return gdzie.indexOf(co);
         } else {
             return -1;
         }
