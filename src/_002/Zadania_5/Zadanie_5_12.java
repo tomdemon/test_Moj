@@ -26,6 +26,7 @@
 package _002.Zadania_5;
 
 import java.util.ArrayList;
+import java.util.StringJoiner;
 
 public class Zadanie_5_12 {
 
@@ -45,6 +46,31 @@ public class Zadanie_5_12 {
 //                System.out.println("Ile razy: " + ileRazy);
         }
         return ileRazy;
+    }
+
+    public static Result getResult(String[] zadania, String szukanaFraza) {
+        // tutaj zwroc obiekt typu Result z odpowiednimi wartosciami
+        // i staraj sie reuzyc rozwiazan z poprzednich zadanek
+        return null;
+    }
+
+    static class Result {
+        int numbersSum;
+        String notANumberConcatenatedArray;
+        int phraseOccuranceInNotANumberCells;
+        int phraseOccuranceAll;
+        float phraseOccuranceRatio;
+
+        @Override
+        public String toString() {
+            return new StringJoiner(", ", Result.class.getSimpleName() + "[", "]")
+                    .add("numbersSum=" + numbersSum)
+                    .add("notANumberConcatenatedArray='" + notANumberConcatenatedArray + "'")
+                    .add("phraseOccuranceInNotANumberCells=" + phraseOccuranceInNotANumberCells)
+                    .add("phraceOccuranceAll=" + phraseOccuranceAll)
+                    .add("phraceOccuranceRatio=" + phraseOccuranceRatio)
+                    .toString();
+        }
     }
 
 
