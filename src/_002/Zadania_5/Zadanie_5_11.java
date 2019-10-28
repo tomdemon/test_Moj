@@ -17,7 +17,7 @@ public class Zadanie_5_11 {
 
         String pierwszaCzesc = str.substring(0, start);
 //        System.out.println(pierwszaCzesc);
-        String drugaCzesc = str.substring((start+ile), (str.length()));
+        String drugaCzesc = str.substring((start+ile));
 
 //        W zadaniu jest "start do start+ile-1" ale, żeby wynik wyszedl taki jak w zadaniu
 //        to uzylem "start do start+ile" (bez -1)
