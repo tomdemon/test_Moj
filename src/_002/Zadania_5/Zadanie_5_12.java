@@ -30,23 +30,7 @@ import java.util.StringJoiner;
 
 public class Zadanie_5_12 {
 
-    public static int strFindAndCount(String gdzie, String co) {
-        int ileRazy = 0;
 
-        for (int i = 0; i < gdzie.length(); i++) {
-            int indeks = gdzie.indexOf(co, i);
-//                System.out.println( i + "- indeks: " + indeks);
-            if (indeks < 0) {
-                return ileRazy;
-            }
-//                System.out.println("1 - " + i);
-            i = indeks + co.length() - 1;
-//                System.out.println("2 - " + i);
-            ileRazy++;
-//                System.out.println("Ile razy: " + ileRazy);
-        }
-        return ileRazy;
-    }
 
     public static Result getResult(String[] zadania, String szukanaFraza) {
         // tutaj zwroc obiekt typu Result z odpowiednimi wartosciami
@@ -160,13 +144,13 @@ public class Zadanie_5_12 {
         int sumaFraz = 0;
         int cyfra2 = 0;
         for (int i = 0; i < listaSlow.size(); i++) {
-            cyfra2 = strFindAndCount(listaSlow.get(i), szukanaFraza);
+            cyfra2 = Zadanie_5_10.strFindAndCount(listaSlow.get(i), szukanaFraza);
             sumaFraz = sumaFraz + cyfra2;
         }
 
         System.out.println("Pkt. 3: " + sumaFraz);
 
-        int sumaFraz2 = strFindAndCount(lancuchZNieLiczb, szukanaFraza);
+        int sumaFraz2 = Zadanie_5_10.strFindAndCount(lancuchZNieLiczb, szukanaFraza);
         System.out.println("Pkt. 4: " + sumaFraz2);
 //        System.out.println(listaSlow);
 

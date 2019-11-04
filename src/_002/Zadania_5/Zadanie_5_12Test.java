@@ -14,11 +14,11 @@ class Zadanie_5_12Test {
 
         Zadanie_5_12.Result wynik = Zadanie_5_12.getResult(zadania, fraza);
 
-        assertEquals(0, wynik.numbersSum);
-        assertEquals("xyz", wynik.notANumberConcatenatedArray);
-        assertEquals(0, wynik.phraseOccuranceInNotANumberCells);
-        assertEquals(0, wynik.phraseOccuranceAll);
-        assertEquals(0, wynik.phraseOccuranceRatio);
+        assertEquals(980, wynik.numbersSum);
+        assertEquals("mamla mama +zonmakmax2amakotma", wynik.notANumberConcatenatedArray);
+        assertEquals(6, wynik.phraseOccuranceInNotANumberCells);
+        assertEquals(7, wynik.phraseOccuranceAll);
+        assertEquals(0.85714287, wynik.phraseOccuranceRatio);
     }
 
     @Test
