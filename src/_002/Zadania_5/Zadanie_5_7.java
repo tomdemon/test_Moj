@@ -29,8 +29,8 @@ public class Zadanie_5_7 {
 
     public static void main(String[] args) {
 
-        String pobraneGdzie = InputUtils.pobierzTekstNaNaleLitery("Podaj gdzie będziemy szukać : ");
-        String pobraneCo = InputUtils.pobierzTekstNaNaleLitery("Podaj co będziemy szukać : ");
+        String pobraneGdzie = InputUtils.pobierzTekstNaMaleLitery("Podaj gdzie będziemy szukać : ");
+        String pobraneCo = InputUtils.pobierzTekstNaMaleLitery("Podaj co będziemy szukać : ");
 
         InputUtils.liniaOddzielajaca();
 

@@ -23,13 +23,22 @@ public class InputUtils {
         return scanner.next().charAt(0);
     }
 
-    public static String pobierzTekstNaNaleLitery(String message) {
+    public static String pobierzTekstNaMaleLitery(String message) {
         System.out.println(message);
         return scanner.nextLine().toLowerCase();
     }
 
+    public static String pobierzTekstNaDuzeLitery(String message) {
+        System.out.println(message);
+        return scanner.nextLine().toUpperCase();
+    }
+
     public static String pobierzTekstNaMaleLitery() {
-        return pobierzTekstNaNaleLitery("Proszę podaj jakiś tekst: ");
+        return pobierzTekstNaMaleLitery("Proszę podaj jakiś tekst: ");
+    }
+
+    public static String pobierzTekstNaDuzeLitery() {
+        return pobierzTekstNaDuzeLitery("Proszę podaj jakiś tekst: ");
     }
 
     public static char pobierzLitere() {
